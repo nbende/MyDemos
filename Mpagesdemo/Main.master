@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Main.master.cs" Inherits="Main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 128px;
+            height: 152px;
+        }
+        .auto-style3 {
+            width: 808px;
+            height: 158px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    </div>
+        <table class="auto-style1">
+            <tr>
+                <td>
+                    <img alt="" class="auto-style2" src="net.png" /></td>
+                <td>
+                    <img alt="" class="auto-style3" src="Azure.jpg" /></td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <asp:Label ID="Label1" runat="server" style="font-weight: 700; font-size: x-large; color: #000099" Text="E-Learning"></asp:Label>
+                    <br />
+                    <br />
+                    <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">About Us</asp:LinkButton>
+                    <br />
+                    <br />
+                    <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">Our Content</asp:LinkButton>
+                    <br />
+                    <br />
+                    <asp:LinkButton ID="LinkButton3" runat="server" OnClick="LinkButton3_Click">Contact Us</asp:LinkButton>
+                    <br />
+                    <br />
+                    <asp:LinkButton ID="LinkButton4" runat="server" OnClick="LinkButton4_Click">Feedback</asp:LinkButton>
+                </td>
+                <td valign="top">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
